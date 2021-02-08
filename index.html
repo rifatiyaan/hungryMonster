@@ -12,32 +12,29 @@
 
 <body>
     <nav>
-        <a href="#"></a>
-
         <ul>
-            <a href="#">
-                <li>Home</li>
-            </a>
-            <li>About</li>
-            <li>Recipes</li>
-            <li>Blog</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Blog</a></li>
         </ul>
     </nav>
     <div id="foodList">
-        <div class="search-box">
+        <div class="searchBox">
             <input id="searchBar" class="form-control" type="text" placeholder="Search food">
-            <button class="btn btn-warning" onclick="searchFood()">Search</button>
+            <button class="btn btn-danger" id="searchBtn">Search</button>
         </div>
         <div id="foodResult-card-grid">
 
         </div>
     </div>
-    <div id="ingredients" style="display: none;">
 
+
+    <div id="ingredients" class="card" style="display: none;">
     </div>
 
       <div id="pop-up" style="display: none;">
-          <div class="card">
+          <div class="card error">
             <h4 class="card-header">404 </h4>
             <h4>Sorry!</h4>
             <div class="card-body">
@@ -48,8 +45,6 @@
          </div>
       </div>
     </div>
-
-
 
   <script src="app.js"></script>
 </body>
